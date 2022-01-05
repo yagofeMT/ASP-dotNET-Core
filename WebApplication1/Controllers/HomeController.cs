@@ -15,9 +15,15 @@ namespace WebApplication1.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Dev"] = "Yago Felipe Marques Tavares";
             return View();
         }
-
+        public IActionResult About()
+        {
+            ViewData["Dev"] = "Yago Felipe Marques Tavares";
+            return View();
+        }
+        
         public IActionResult Privacy()
         {
             return View();
