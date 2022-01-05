@@ -1,0 +1,62 @@
+﻿@model IEnumerable<SalesWebMVC.Models.Entities.SalerRecord>
+
+@{
+    ViewData["Title"] = "Sales Records";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="SimpleSearch" class="form-horizontal">
+            <fieldset>
+                <legend>Simple Search</legend>
+                <div class="form-group">
+                    <label for="minDate" class="col-lg-2 control-label">Min Date</label>
+                    <div class="col-lg-10">
+                        <input type="date" name="minDate" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="maxDate" class="col-lg-2 control-label">Max Date</label>
+                    <div class="col-lg-10">
+                        <input type="date" name="maxDate" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary ">Search</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-6">
+        <form asp-action="GroupingSearch" class="form-horizontal">
+            <fieldset>
+                <legend>Grouping Search</legend>
+                <div class="form-group">
+                    <label for="minDate" class="col-lg-2 control-label">Min Date</label>
+                    <div class="col-lg-10">
+                        <input type="date" name="minDate" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="maxDate" class="col-lg-2 control-label">Max Date</label>
+                    <div class="col-lg-10">
+                        <input type="date" name="maxDate" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary ">Search</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+</div>
+
+
+
